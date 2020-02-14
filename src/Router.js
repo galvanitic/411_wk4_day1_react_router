@@ -13,6 +13,7 @@ import { Switch, Route } from 'react-router'
 // Write component imports here //
 import Home from './components/Home'
 import About from './components/About'
+import Car from './components/Car'
 
 
 // Start Router function here //
@@ -20,7 +21,8 @@ const Router = () => {
     return (
         <Switch>
             <Route exact path='/' component={Home} />
-            <Route path='/dash' component={About} />
+            <Route path='/about' component={About} />
+            <Route path='/car/:id' component={Car} />
         </Switch>
     )
 }
